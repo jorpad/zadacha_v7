@@ -27,21 +27,16 @@ namespace zadacha_v7
 
         private void btnGetAnswerClick(object sender, RoutedEventArgs e)
         {
-            double a = Convert.ToDouble(txtbxForA.Text);
-            double b = Convert.ToDouble(txtbxForB.Text);
-            double h = Convert.ToDouble(txtbxForH.Text);
-
-            double x = a;
-            double y;
-
-
-
+            double a, b, h, x, y;
+            a = int.Parse(txtbxForA.Text);
+            b = int.Parse(txtbxForB.Text);
+            h = int.Parse(txtbxForH.Text);
+            x = a;         
             while (x <= b)
             {
                 y = x - Math.Sin(x);
-                string answer = $"\t{x}\t\t{y}\n";
-                txtbxAnswer.Text += answer;
-                x = x + h;
+                txtbxAnswer.Text += $"\t{x}\t\t{y}\n";
+                x += h;
             }
         }
     }

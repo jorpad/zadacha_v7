@@ -1,0 +1,22 @@
+﻿<Window x:Class="zadacha_v7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zadacha_v7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="376" Width="352" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Введите значения отрезка:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,31,0,0" TextWrapping="Wrap" Text="a =" VerticalAlignment="Top"/>
+        <TextBox Name="txtbxForA" HorizontalAlignment="Left" Height="23" Margin="67,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,59,0,0" TextWrapping="Wrap" Text="b =" VerticalAlignment="Top"/>
+        <TextBox Name="txtbxForB" HorizontalAlignment="Left" Height="23" Margin="67,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBlock HorizontalAlignment="Left" Margin="188,10,0,0" TextWrapping="Wrap" Text="Введите значение шага:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="219,31,0,0" TextWrapping="Wrap" Text="h =" VerticalAlignment="Top"/>
+        <TextBox Name="txtbxForH" HorizontalAlignment="Left" Height="23" Margin="250,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69"/>
+        <TextBox Name="txtbxAnswer" Margin="10,86,10,62" TextWrapping="Wrap"/>
+        <Button Name="btnGetAnswer" Content="Получить ответ!" Margin="10,301,10,13" Click="btnGetAnswerClick"/>
+
+    </Grid>
+</Window>
